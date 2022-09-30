@@ -1,3 +1,169 @@
 .main-header {
-    border: 1px solid purple;
+    color: #1D1818;
+    line-height: 23px;
+
+    &__site-nav {
+        padding-inline: 10vw;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 5px;
+        border-bottom: 2px solid #E0E0E0;
+        font-size: 18px;
+        font-weight: 400;
+
+        .site-nav__services {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 10px 0;
+            width: 40%;
+
+            .services__coord {
+                font-weight: 700;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                &::after {
+                    margin-left: 5px;
+                    color: #1D1818;
+                    content: "\02C5";
+                }
+
+                i {
+                    margin-right: 3px;
+                }
+            }
+
+            .services__item {
+                font-weight: 400;
+            }
+        }
+
+        .site-nav__us {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 20%;
+
+            .us__item {
+                font-weight: 400;
+            }
+        }
+    }
+
+    &__panel-nav {
+        padding-inline: 10vw;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 5px;
+        font-size: 18px;
+        margin: 20px 0;
+
+        img.panel-nav__logo {
+            border-radius: 5px;
+            height: 50px;
+            width: auto;
+        }
+
+        .panel-nav__addres {
+            text-align: left;
+
+            p.addres__text {
+                line-height: 23px;
+            }
+
+            .addres__schema {
+                text-decoration: underline;
+                color: #E13B3F;
+            }
+        }
+
+        input.panel-nav__search {
+            border: 1px solid #A8D1E7;
+            border-radius: 25px;
+            padding-inline: 10px;
+            height: 45px;
+            width: 20%;
+        }
+
+        .panel-nav__telephone-info {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: center;
+
+            .telephone-info__telephone {
+                margin-bottom: 3px;
+                font-size: 22px;
+                font-weight: 700;
+
+                i {
+                    margin-right: 10px;
+                    transform: rotate(90deg);
+                }
+            }
+
+            .telephone-info__order {
+                color: #E13B3F;
+                border: 1px solid #E13B3F;
+                border-radius: 5px;
+                padding-inline: 23px;
+            }
+        }
+
+        .panel-nav__personal-panel {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 20%;
+
+            a {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            // .personal-panel__account {}
+
+            // .personal-panel__favourites {}
+
+            // .personal-panel__basket {}
+        }
+    }
+
+    &__shop-nav {
+        padding-inline: 10vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #A8D1E7;
+        border: 1px solid #384685;
+        line-height: 26px;
+        font-size: 20px;
+
+        .shop-nav__item {
+            text-transform: uppercase;
+            // margin-top: 18px;
+            // margin-bottom: 22px;
+            border-radius: 5px;
+            font-weight: 700;
+            padding: 18px 12px 22px;
+            display: block;
+
+            &:hover {
+                background-color: #384685;
+                color: white;
+            }
+        }
+    }
 }

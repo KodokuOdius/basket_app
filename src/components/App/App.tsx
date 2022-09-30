@@ -7,9 +7,7 @@ import "@components/Main/Main.scss";
 function App() {
     return (
         <div className="App">
-            <Header>
-                Main Header
-            </Header>
+            <Header />
             <Main />
             <Footer>
                 Main Footer
