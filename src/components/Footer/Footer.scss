@@ -1,5 +1,112 @@
 .main-footer {
     margin-top: auto;
     width: 100%;
-    border: 2px solid red;
+    padding-inline: 10vw;
+    padding-top: 40px;
+    background: #384685;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    color: #FFFFFF;
+    line-height: 23px;
+    font-size: 18px;
+    // font-family: 'PT Sans';
+
+
+    .main-footer__main-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .main-info__site-info {
+
+            .footer__logo {
+                height: 50px;
+                width: auto;
+                margin-bottom: 25px;
+            }
+
+            .site-info__telephone {
+                margin-bottom: 20px;
+                font-size: 20px;
+                line-height: 26px;
+            }
+
+            .site-info__info {
+                margin-bottom: 60px;
+
+                ul.info__list {
+                    li.info__item+li.info__item {
+                        margin-top: 10px;
+                    }
+                }
+
+
+                li.info__item {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+
+                    .info__item_bold {
+                        width: 55%;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+
+        .main-info__link-info {
+            .link-info__title {
+                font-weight: 700;
+                font-size: 22px;
+                line-height: 28px;
+            }
+
+            img.instagram {
+                height: 62px;
+                width: auto;
+                margin: 5px 5px 15px;
+            }
+        }
+
+        span.main-info__security {
+            color: #DBDBDB;
+            display: block;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 26px;
+            margin-bottom: 40px;
+        }
+    }
+
+    .main-footer__table-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        // flex-wrap: wrap;
+        margin-left: 25px;
+        width: 70%;
+
+        ul+ul {
+            margin-left: 15px;
+        }
+
+        ul.table-info__column {
+            li+li {
+                margin-top: 15px;
+            }
+        }
+
+        li.column__item {
+            font-size: 18px;
+
+            h4 {
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 26px;
+                margin-bottom: 25px;
+            }
+        }
+    }
 }
